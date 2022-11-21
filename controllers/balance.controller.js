@@ -3,7 +3,7 @@ import { balanceCollection } from "../database/db.js";
 
 export async function entry(req, res) {
     const dados = req.body;
-    c
+    
 
 
     try {
