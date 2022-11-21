@@ -26,7 +26,6 @@ export async function signInBodyValidation(req, res, next) {
     const { email } = req.body;
 
     const check = await usersCollection.findOne({ email: email });
-    console.log(check);
     if (!check) {
         return res.status(404).send({ message: "User is not created" });
     }
