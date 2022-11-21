@@ -27,7 +27,7 @@ export async function signIn(req, res) {
     try {
 
         const check = await usersCollection.findOne({ email: email });
-        res.status(200).send(check)
+        res.status(200).send(check.name)
 
     } catch (err) {
 
